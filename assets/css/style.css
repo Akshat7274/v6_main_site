@@ -945,6 +945,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-left: 12px;
 }
 
+#logo-header{
+    height: 70px;
+}
+
 @media only screen and (max-width: 575px) {
   .header_logo {
     width: 100%;
@@ -1541,7 +1545,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 940px;
+  height: 100vh;
   position: relative;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
