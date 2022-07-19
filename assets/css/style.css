@@ -1448,9 +1448,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .scroll__top_icon {
-  position: relative;
-  left: 100%;
-  bottom: 30px;
+  position: absolute;
+  left: 1200px;
+  margin-top: -50px ;
   -webkit-transform: translatex(-50%);
           transform: translatex(-50%);
 }
