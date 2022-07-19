@@ -3156,7 +3156,7 @@ section.error_section {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 502px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3196,11 +3196,11 @@ section.error_section {
 }
 
 .breadcrumbs_text {
-  padding-top: 65px;
+  padding-top: 1px;
 }
 @media only screen and (max-width: 575px) {
   .breadcrumbs_text {
-    padding-top: 162px;
+    padding-top: 50px;
   }
 }
 .breadcrumbs_text h1 {
@@ -3209,6 +3209,10 @@ section.error_section {
   font-family: "Metal Mania", cursive;
   text-shadow: 3px 3px 0px #b154f0;
   margin-bottom: 25px;
+  position: absolute;
+  top: 150px;
+  left: 132px;
+  right: 1156px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .breadcrumbs_text h1 {
@@ -3239,11 +3243,13 @@ section.error_section {
   }
 }
 .breadcrumbs_text ul li {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   color: #b154f0;
   text-transform: uppercase;
   margin-right: 8px;
+  left: 132px;
+  top: 200px;
 }
 @media only screen and (max-width: 767px) {
   .breadcrumbs_text ul li {
@@ -3253,15 +3259,27 @@ section.error_section {
 }
 .breadcrumbs_text ul li:last-child {
   margin-right: 0;
+  position: absolute;
+  top: 220px;
+  left: 220px;
+  bottom: 0px;
 }
 .breadcrumbs_text ul li a {
   color: #ffffff;
+  position:absolute;
+  top: 220px;
+  left: 132px;
+  bottom: 0px;
 }
 .breadcrumbs_text ul li a:hover {
   color: #b154f0;
 }
 .breadcrumbs_text ul li span {
   color: #ffffff;
+  position: absolute;
+  top: 220px;
+  left: 195px;
+  bottom: 0px;
 }
 
 .about_section {
