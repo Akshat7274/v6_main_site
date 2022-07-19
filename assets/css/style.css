@@ -205,6 +205,9 @@ figure {
 .container {
   max-width: 1200px;
 }
+.gaming_page_section{ 
+  margin-top: -40vh;
+}
 
 @media only screen and (max-width: 767px) {
   .container {
@@ -1017,9 +1020,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   position: absolute;
   content: "";
   background: url(../img/others/menu_shape.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   left: 50%;
   top: 50%;
-  width: 94px;
+  width: 135%;
   height: 44px;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
@@ -3157,13 +3162,13 @@ section.error_section {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 200px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          /* align-items: center; */
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .breadcrumbs_bg {
@@ -3210,10 +3215,8 @@ section.error_section {
   font-family: "Metal Mania", cursive;
   text-shadow: 3px 3px 0px #b154f0;
   margin-bottom: 25px;
-  position: absolute;
-  top: 150px;
-  left: 132px;
-  right: 1156px;
+  margin-top: 15vh;
+  
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .breadcrumbs_text h1 {
@@ -3249,8 +3252,7 @@ section.error_section {
   color: #b154f0;
   text-transform: uppercase;
   margin-right: 8px;
-  left: 132px;
-  top: 200px;
+  
 }
 @media only screen and (max-width: 767px) {
   .breadcrumbs_text ul li {
@@ -3260,27 +3262,18 @@ section.error_section {
 }
 .breadcrumbs_text ul li:last-child {
   margin-right: 0;
-  position: absolute;
-  top: 220px;
-  left: 220px;
-  bottom: 0px;
+  
 }
 .breadcrumbs_text ul li a {
   color: #ffffff;
-  position:absolute;
-  top: 220px;
-  left: 132px;
-  bottom: 0px;
+  
 }
 .breadcrumbs_text ul li a:hover {
   color: #b154f0;
 }
 .breadcrumbs_text ul li span {
   color: #ffffff;
-  position: absolute;
-  top: 220px;
-  left: 195px;
-  bottom: 0px;
+  
 }
 
 .about_section {
