@@ -258,6 +258,46 @@ Credit: https://codepen.io/click47/pen/wEZWGe
   margin-top: -40vh;
 }
 
+.blog_details_section{
+  margin-top: -40vh;
+}
+
+.about_section{
+  margin-top: -40vh;
+}
+
+.blog_page_section{
+  margin-top: -40vh;
+}
+
+.contact_page_section{
+  margin-top: -40vh;
+}
+
+.faq_page_section{
+  margin-top: -40vh;
+}
+
+.game_details_section{
+  margin-top: -40vh;
+}
+
+.match_details_section{
+  margin-top: -40vh;
+}
+
+.upcoming_gaming_section{
+  margin-top: -40vh;
+}
+
+.player_details_section{
+  margin-top: -40vh;
+}
+
+.player_list_section{
+  margin-top: -40vh;
+}
+
 @media only screen and (max-width: 767px) {
   .container {
     max-width: 576px;
