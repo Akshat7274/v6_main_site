@@ -213,6 +213,10 @@ figure {
   margin-top: -40vh;
 }
 
+.about_section{
+  margin-top: -40vh;
+}
+
 @media only screen and (max-width: 767px) {
   .container {
     max-width: 576px;
