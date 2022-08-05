@@ -207,6 +207,8 @@ Credit: https://codepen.io/click47/pen/wEZWGe
   background-color: trasparent;
   color: green;
   transition: 0.3s;
+  background-color: rgba(20, 20, 20, 0.75);
+  border-radius: 12px;
 }
 .scroll-inner {
   position: absolute;
@@ -233,9 +235,9 @@ Credit: https://codepen.io/click47/pen/wEZWGe
   cursor: pointer;
   animation-play-state: paused;
 }
-.scroll-outer:hover{
-  background-color: rgba(20, 20, 20, 0.75);
-}
+/*.scroll-outer:hover{
+  
+}*/
 /*-- 
     - Common Classes
 -----------------------------------------*/
@@ -1543,8 +1545,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .scroll__top_icon {
   position: absolute;
-  left: 1200px;
-  margin-top: -50px ;
+  right: 25px;
+  margin-top: -37.5px ;
   -webkit-transform: translatex(-50%);
           transform: translatex(-50%);
 }
