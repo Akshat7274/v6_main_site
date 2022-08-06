@@ -205,7 +205,6 @@ Credit: https://codepen.io/click47/pen/wEZWGe
   text-align: center;
   margin: 10px;
   background-color: trasparent;
-  color: green;
   transition: 0.3s;
   background-color: rgba(20, 20, 20, 0.75);
   border-radius: 12px;
@@ -221,6 +220,10 @@ Credit: https://codepen.io/click47/pen/wEZWGe
   /* Applica animazione all'elemento */
   animation: scroll-up 25s linear 1s infinite normal none running;
 }
+.scroll-text{
+  font-family: 'Source Code Pro', monospace;
+}
+
 /* Move it (definisce l'animazione) */
 @keyframes scroll-up {
   0% {
