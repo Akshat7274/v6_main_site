@@ -241,6 +241,11 @@ Credit: https://codepen.io/click47/pen/wEZWGe
 /*.scroll-outer:hover{
   
 }*/
+
+.indradhanush-text{  
+  width: 70%;
+  margin: 0 auto;
+}
 /*-- 
     - Common Classes
 -----------------------------------------*/
@@ -3016,7 +3021,7 @@ section.error_section {
 .testimonial_section::before {
   position: absolute;
   content: "";
-  width: 38%;
+  width: 65%;
   height: 10px;
   background: #b154f0;
   right: 0;
@@ -3123,11 +3128,11 @@ section.error_section {
 }
 
 .testimonial_thumb {
-  width: 270px;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial_thumb {
-    width: 220px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 575px) {
