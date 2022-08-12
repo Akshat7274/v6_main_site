@@ -3128,11 +3128,11 @@ section.error_section {
 }
 
 .testimonial_thumb {
-  width: 270px;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial_thumb {
-    width: 220px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 575px) {
