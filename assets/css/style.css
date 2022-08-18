@@ -273,7 +273,7 @@ Credit: https://codepen.io/click47/pen/wEZWGe
 }
 
 .about_section{
-  margin-top: -40vh;
+  margin-top: 0vh;
 }
 
 .blog_page_section{
@@ -3014,6 +3014,7 @@ section.error_section {
 }
 
 .testimonial_section {
+  margin-top: -50vh;
   padding: 124px 0 250px;
   margin-bottom: 125px;
   position: relative;
