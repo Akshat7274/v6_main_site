@@ -3014,7 +3014,7 @@ section.error_section {
 }
 
 .testimonial_section {
-  margin-top: -50vh;
+  margin-top: -100vh;
   padding: 124px 0 250px;
   margin-bottom: 125px;
   position: relative;
@@ -3023,7 +3023,7 @@ section.error_section {
   position: absolute;
   content: "";
   width: 65%;
-  height: 10px;
+  height: 100px;
   background: #b154f0;
   right: 0;
   top: 185px;
