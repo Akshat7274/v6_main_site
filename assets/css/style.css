@@ -41,6 +41,11 @@ body {
   letter-spacing: 0.02em;
 }
 
+@font-face {
+  font-family: Origin-Tech;
+  src: url(/assets/fonts/OriginTech.ttf);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-top: 0;
@@ -206,7 +211,7 @@ Credit: https://codepen.io/click47/pen/wEZWGe
   margin: 10px;
   background-color: trasparent;
   transition: 0.3s;
-  background-color: rgba(20, 20, 20, 0.75);
+  background-color: rgba(20, 20, 20, 0.8);
   border-radius: 12px;
 }
 .scroll-inner {
@@ -308,14 +313,158 @@ Credit: https://codepen.io/click47/pen/wEZWGe
   margin-top: -40vh;
 }
 
+
 @media only screen and (max-width: 767px) {
   .container {
     max-width: 576px;
   }
+  .breadcrumbs_bg .container{
+    margin-left: 15vw;
+  }
+  .breadcrumbs_text ul li a{
+    margin-left: 7vw;
+  }
+  .blog_details_section{
+    margin-top: -1vh;
+  }
+  
+  .about_section{
+    margin-top: 0vh;
+  }
+  
+  .blog_page_section{
+    margin-top: -1vh;
+  }
+  
+  .contact_page_section{
+    margin-top: -1vh;
+  }
+  
+  .faq_page_section{
+    margin-top: -1vh;
+  }
+  
+  .game_details_section{
+    margin-top: -1vh;
+  }
+  
+  .match_details_section{
+    margin-top: -1vh;
+  }
+  
+  .upcoming_gaming_section{
+    margin-top: -1vh;
+  }
+  
+  .player_details_section{
+    margin-top: -1vh;
+  }
+  
+  .player_list_section{
+    margin-top: -1vh;
+  }
 }
 @media only screen and (max-width: 479px) {
   .container {
-    width: 100%;
+    max-width: 576px;
+  }
+  .breadcrumbs_bg .container{
+    margin-left: 15vw;
+  }
+  .breadcrumbs_text ul li a{
+    margin-left: 20vw;
+  }.blog_details_section{
+    margin-top: -1vh;
+  }
+  
+  .about_section{
+    margin-top: 0vh;
+  }
+  
+  .blog_page_section{
+    margin-top: -1vh;
+  }
+  
+  .contact_page_section{
+    margin-top: -1vh;
+  }
+  
+  .faq_page_section{
+    margin-top: -1vh;
+  }
+  
+  .game_details_section{
+    margin-top: -1vh;
+  }
+  
+  .match_details_section{
+    margin-top: -1vh;
+  }
+  
+  .upcoming_gaming_section{
+    margin-top: -1vh;
+  }
+  
+  .player_details_section{
+    margin-top: -1vh;
+  }
+  
+  .player_list_section{
+    margin-top: -1vh;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    max-width: 576px;
+  }
+  .breadcrumbs_bg .container{
+    margin-left: 15vw;
+  }
+  .breadcrumbs_text ul li a{
+    margin-left: 30vw;
+  }
+  .gaming_page_section{ 
+    margin-top: -1vh;
+  }
+  
+  .blog_details_section{
+    margin-top: -1vh;
+  }
+  
+  .about_section{
+    margin-top: 0vh;
+  }
+  
+  .blog_page_section{
+    margin-top: -1vh;
+  }
+  
+  .contact_page_section{
+    margin-top: -1vh;
+  }
+  
+  .faq_page_section{
+    margin-top: -1vh;
+  }
+  
+  .game_details_section{
+    margin-top: -1vh;
+  }
+  
+  .match_details_section{
+    margin-top: -1vh;
+  }
+  
+  .upcoming_gaming_section{
+    margin-top: -1vh;
+  }
+  
+  .player_details_section{
+    margin-top: -1vh;
+  }
+  
+  .player_list_section{
+    margin-top: -1vh;
   }
 }
 .capitalize {
@@ -1759,7 +1908,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .hero_content h1 {
   margin-bottom: 41px;
-  font-family: "Metal Mania", cursive;
+  font-family: Origin-Tech, cursive;
   text-shadow: 3px 3px 0px #b154f0;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -3312,7 +3461,7 @@ section.error_section {
 .breadcrumbs_text h1 {
   font-size: 31px;
   line-height: 30px;
-  font-family: "Metal Mania", cursive;
+  font-family: Origin-Tech, cursive;
   text-shadow: 3px 3px 0px #b154f0;
   margin-bottom: 25px;
   margin-top: 15vh;
