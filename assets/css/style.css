@@ -46,6 +46,11 @@ body {
   src: url(/assets/fonts/OriginTech.ttf);
 }
 
+@font-face {
+  font-family: Thunderstrike;
+  src: url(/assets/fonts/thunderstrike.ttf);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-top: 0;
@@ -1908,7 +1913,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .hero_content h1 {
   margin-bottom: 41px;
-  font-family: Origin-Tech, cursive;
+  font-family: Thunderstrike, cursive;
   text-shadow: 3px 3px 0px #b154f0;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -3461,7 +3466,7 @@ section.error_section {
 .breadcrumbs_text h1 {
   font-size: 31px;
   line-height: 30px;
-  font-family: Origin-Tech, cursive;
+  font-family: Thunderstrike, cursive;
   text-shadow: 3px 3px 0px #b154f0;
   margin-bottom: 25px;
   margin-top: 15vh;
