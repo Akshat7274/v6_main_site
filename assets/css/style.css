@@ -1080,15 +1080,18 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .canvas_open {
   display: none;
   margin-left: 35px;
+  width: 0px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .canvas_open {
     display: block;
+    margin-right: 5vw;
   }
 }
 @media only screen and (max-width: 767px) {
   .canvas_open {
     display: block;
+    margin-right: 5vw;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -1096,6 +1099,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     position: absolute;
     top: 45px;
     right: 0;
+    margin-right: 12vw;
   }
 }
 .canvas_open a {
@@ -1203,6 +1207,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 #logo-header{
     height: 70px;
+}
+
+.header_right_sidebar{
+  display: none;
 }
 
 @media only screen and (max-width: 575px) {
