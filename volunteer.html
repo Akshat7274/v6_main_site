@@ -27,6 +27,72 @@
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- <link rel="stylesheet" href="assets/css/photo_style.css"> -->
+    <script>
+        function openTeam(TName) {
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(TName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <style>
+        * {box-sizing: border-box}
+
+        /* Style the tab */
+        .tab {
+        float: left;
+        border: none;
+        height: 18vw;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+        display: block;
+        background-color: rgb(139, 45, 206);
+        height: 2vw;
+        color: black;
+        /* padding: 22px 16px; */
+        padding-left: 5%;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+        background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+        background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid rgb(139, 45, 206);
+        border-left: none;
+        height: 18vw;
+        }
+    </style>
 </head>
 
 <body class="body__bg" data-bgimg="assets/img/bg/body-bg2.webp">
@@ -172,7 +238,7 @@
     <!-- breadcrumbs area end -->
     <div class="contact_form_area" style="margin-top:-50vh;padding-right: 50px;padding-left: 50px;margin-bottom: 3vh;">
         <div class="description" style="margin-bottom: 10vh;">
-            <p style="font-size: 1.9vw;">Volunteering in an annual tech fest like siNUsoid V6 is a great way to get connected with people from all around and 
+            <p>Volunteering in an annual tech fest like siNUsoid V6 is a great way to get connected with people from all around and 
                 learn about new technologies while also exploring your management skills.
                 Also, it's a terrific platform to meet new people and create some lifelong experiences. 
                 Come, join us and be a part of our volunteer program if you're looking forward to show your 
@@ -181,45 +247,67 @@
                 goes well. We hope to see you soon! 
             </p>
             <br>
-            <h3> TEAM DESCRIPTION:</h3>
+            <h3> TEAM DESCRIPTIONS:</h3>
             <br> 
-            <p style="font-size: 1.4vw;">
-                Content: Good content is not storytelling. It’s telling your story well. But great content goes beyond that -  it is a willingness to push boundaries and take risks. The content team of siNUsoid is responsible for ideation, optimization and conversion of ideas into engaging content that attracts people to our fest and events. Don’t let our vacant stares fool you - us zoning out is us working. 
-                <br>
-                <br>
-                <br>
-                Sponsorship: It’s all about the money, money, money. Our sponsorship team aids in making the events bigger, brighter and better by acquiring new sponsors and maintaining its relationships with old sponsors. We aim to extend the reach of both our university and its sponsors. If you think you can make a valuable addition to the team, please sign up!
-                <br>
-                <br>
-                <br>
-                Marketing: The best marketing does not feel like marketing. It’s merely the creative use of truths. This is the cradle of countless ideas and a Garden of Eden for all those who’re looking to gain first-hand experience working in marketing. 
-                Can you make someone feel like the hero of your story? If so, the marketing team is just the place for you! We are all about sharing our passion, and we’d love to start with you. 
-                <br>
-                <br>
-                <br>
-                Operations: The nice thing about teamwork is that you always have someone on your side. The operations team is the backbone of every other team of siNUsoid. They’re the reason every team’s hardwork and passion culminates in a successful event. They’re the motherbox of siNUsoid. Are you looking to be an important component in the grand scheme of things? Then, this place calls for you. 
-                <br>
-                <br>
-                <br>
-
-                Technical: When you hand good people some great possibilities, they do exceptional things. The technical team of siNUsoid embodies this mantra, working our magic behind the screens to build up the technical pillars of the fest. As a tech fest of NIIT University, we emphasise on the aspect of having a strong technical team. If you have the mojo, then you should join the league of CR 202’s backbenchers who have their earphones on and are lost to the world - the coder in you will find home here! 
-                <br>
-                <br>
-                <br>
-                Design: Design is intelligence made visible, and creativity is intelligence having fun. If you want to convert ideas into stunning graphics, the design team of siNUsoid welcomes you with open arms. From your Instagram feed to your Whatsapp groups and our website to the mails in your inbox - the visuals are all us. We’re like the Big Brother from George Orwell’s 1984, we’re everywhere!!
-                <br>
-                <br>
-                <br>
-                Creative: Art is something that makes you breathe with a different kind of happiness. If your hands always reach for the paintbrush, and an empty canvas is just an infinite pool of opportunities, the creative team and network lab welcomes you. Responsible for the gorgeous artworks that grace the walls during our three day fest, we are the coterie of innovation.
-                <br>
-                <br>
-                <br>
-                Event Curation: We do not remember days, but rather moments. The event curation team of siNUsoid strives to organize events that achieves our goals and exceeds every expectation. From planning to execution, we are the brains and the moxie behind the numerous events that siNUsoid V6 organises. 
-                <br>
-                <br>
-                <br>
-                Public Relations: People buy relationships, stories and magic. If that is something you strive to create and promote, the public relations team would love to have you. We’re the first point of contact and we form lasting connections with the people we get into contact with. There’s never a dull moment with us. Sounds jazzy, right? Come join us if you think you’re cut-out for this. 
-                </p>
+            <div class="">
+                <div class="col-10">
+                    <div class="tab col-3">
+                        <button class="tablinks" onclick="openTeam('Content')">Content</button>
+                        <button class="tablinks" onclick="openTeam('Sponsorship')">Sponsorship</button>
+                        <button class="tablinks" onclick="openTeam('Marketing')">Marketing</button>
+                        <button class="tablinks" onclick="openTeam('Operations')">Operations</button>
+                        <button class="tablinks" onclick="openTeam('Tech')">Tech</button>
+                        <button class="tablinks" onclick="openTeam('Design')">Design</button>
+                        <button class="tablinks" onclick="openTeam('Creative')">Creative</button>
+                        <button class="tablinks" onclick="openTeam('EC')">Event Curation</button>
+                        <button class="tablinks" onclick="openTeam('PR')">Public Relations</button>
+                    </div>
+                    <div style="margin: 5vh;"></div>
+                    <div id="Content" class="tabcontent col-7" >
+                        <h3>Content</h3>
+                        <p>Good content is not storytelling. It’s telling your story well. But great content goes beyond that -  it is a willingness to push boundaries and take risks. The content team of siNUsoid is responsible for ideation, optimization and conversion of ideas into engaging content for our fest and events. Don’t let our vacant stares fool you - us zoning out is us working. </p>
+                        
+                    </div> 
+                    <div id="Sponsorship" class="tabcontent col-7" style="display:none">
+                        <h3>Sponsorship</h3>
+                        <p>It’s all about the money, money, money. Our sponsorship team aids in making the events bigger, brighter and better by acquiring new sponsors and maintaining its relationships with old sponsors. We aim to extend the reach of both our university and its sponsors. If you think you can make a valuable addition to the team, please sign up!</p>
+                    </div>
+                    
+                    <div id="Marketing" class="tabcontent col-7" style="display:none">
+                        <h3>Marketing</h3>
+                        <p>The best marketing does not feel like marketing. It’s merely the creative use of truths. This is the cradle of countless ideas and a Garden of Eden for all those who’re looking to gain first-hand experience working in marketing. 
+                        </p>
+                    </div>
+                    <div id="Operations" class="tabcontent col-7" style="display:none">
+                        <h3>Operations</h3>
+                        <p>The nice thing about teamwork is that you always have someone on your side. The operations team is the backbone of every other team of siNUsoid. They’re the reason every team’s hardwork and passion culminates in a successful event. Are you looking to be an important component in the grand scheme of things? Then, this place calls for you.</p>
+                    </div>
+                    
+                    <div id="Tech" class="tabcontent col-7" style="display:none">
+                        <h3>Tech</h3>
+                        <p>When you hand good people some great possibilities, they do exceptional things. The technical team of siNUsoid embodies this mantra, working our magic behind the screens to build up the technical pillars of the fest. As a tech fest, we emphasise on the aspect of having a strong technical team. If you have the mojo, the coder in you will find home here!</p>
+                    </div>
+                    
+                    <div id="Design" class="tabcontent col-7" style="display:none">
+                        <h3>Digital Design</h3>
+                        <p>Design is intelligence made visible, and creativity is intelligence having fun. If you want to convert ideas into stunning graphics, the design team of siNUsoid welcomes you with open arms. From Instagram feed to Whatsapp groups and our website to the mails - the visuals are all us. We’re like the Big Brother from George Orwell’s 1984, we’re everywhere!!</p>
+                    </div>
+                    <div id="Creative" class="tabcontent col-7" style="display:none">
+                        <h3>Creative</h3>
+                        <p>Art is something that makes you breathe with a different kind of happiness. If your hands always reach for the paintbrush, and an empty canvas is just an infinite pool of opportunities, the creative team welcomes you. Responsible for the gorgeous artworks that grace the walls during our three day fest, we are the coterie of innovation.</p>
+                    </div>
+                    
+                    <div id="EC" class="tabcontent col-7" style="display:none">
+                        <h3>Event Curation</h3>
+                        <p>We do not remember days, but rather moments. The event curation team of siNUsoid strives to organize events that achieves our goals and exceeds every expectation. From planning to execution, we are the brains and the moxie behind the numerous events that siNUsoid V6 organises.</p>
+                    </div>
+                    
+                    <div id="PR" class="tabcontent col-7" style="display:none">
+                        <h3>Public Relations</h3>
+                        <p>People buy relationships, stories and magic. If that is something you strive to create and promote, the public relations team would love to have you. We’re the first point of contact and we form lasting connections with the people we get into contact with. Sounds jazzy, right? Come join us if you think you’re cut-out for this.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section_title text-center mb-60">
             <h2>APPLY HERE</h2>
@@ -249,7 +337,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="teams" style="margin-bottom: 10vh;">
+                <div class="tabcontents" style="margin-bottom: 10vh;">
                     <h4 style="font-size: 1.5vw;">Which team you want to join?</h4>
                     <input type="checkbox" id="team1" name="tech" value="tech">
                     <label for="tech"> Tech Team</label><br>
@@ -271,7 +359,7 @@
                     <label for="marketing"> Marketing Team</label><br>
                 </div>
                 <div class="form_textarea">
-                    <textarea name="con_message" placeholder="Why you are choosing this team? "></textarea>
+                    <textarea name="con_message" placeholder="Why you are choosing this team? *" required></textarea>
                 </div>
                 <div class="form_input_btn text-center">
                     <button type="submit" style="bottom: 30px;" class="btn btn-link">SUBMIT NOW <img src="assets/img/icon/arrrow-icon.webp" alt=""></button>

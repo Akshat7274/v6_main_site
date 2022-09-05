@@ -5273,6 +5273,7 @@ section.error_section {
 .contact_info_area .row {
   margin-left: -20px;
   margin-right: -20px;
+  margin-top: 50%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .contact_info_area .row {
