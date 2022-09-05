@@ -274,7 +274,7 @@ Credit: https://codepen.io/click47/pen/wEZWGe
 .container {
   max-width: 1200px;
 }
-.gaming_page_section{ 
+/* .gaming_page_section{ 
   margin-top: -40vh;
 }
 
@@ -316,7 +316,7 @@ Credit: https://codepen.io/click47/pen/wEZWGe
 
 .player_list_section{
   margin-top: -40vh;
-}
+} */
 
 
 @media only screen and (max-width: 767px) {
@@ -378,44 +378,6 @@ Credit: https://codepen.io/click47/pen/wEZWGe
   }
   .breadcrumbs_text ul li a{
     margin-left: 20vw;
-  }.blog_details_section{
-    margin-top: -1vh;
-  }
-  
-  .about_section{
-    margin-top: 0vh;
-  }
-  
-  .blog_page_section{
-    margin-top: -1vh;
-  }
-  
-  .contact_page_section{
-    margin-top: -1vh;
-  }
-  
-  .faq_page_section{
-    margin-top: -1vh;
-  }
-  
-  .game_details_section{
-    margin-top: -1vh;
-  }
-  
-  .match_details_section{
-    margin-top: -1vh;
-  }
-  
-  .upcoming_gaming_section{
-    margin-top: -1vh;
-  }
-  
-  .player_details_section{
-    margin-top: -1vh;
-  }
-  
-  .player_list_section{
-    margin-top: -1vh;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -1085,13 +1047,13 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .canvas_open {
     display: block;
-    margin-right: 5vw;
+    margin-right: 10vw;
   }
 }
 @media only screen and (max-width: 767px) {
   .canvas_open {
     display: block;
-    margin-right: 5vw;
+    margin-right: 10vw;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -1099,7 +1061,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     position: absolute;
     top: 45px;
     right: 0;
-    margin-right: 12vw;
+    margin-right: 20vw;
   }
 }
 .canvas_open a {
@@ -1220,6 +1182,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #logo-header{
+    height: 50px;
+    margin-top: 15px;
+}
 }
 
 @media only screen and (max-width: 575px) {
@@ -3176,7 +3142,7 @@ section.error_section {
 }
 
 .testimonial_section {
-  margin-top: -100vh;
+  /* margin-top: -100vh; */
   padding: 124px 0 250px;
   margin-bottom: 125px;
   position: relative;
@@ -3184,8 +3150,8 @@ section.error_section {
 .testimonial_section::before {
   position: absolute;
   content: "";
-  width: 65%;
-  height: 100px;
+  width: 60%;
+  height: 10px;
   background: #b154f0;
   right: 0;
   top: 185px;
@@ -3424,13 +3390,13 @@ section.error_section {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 500px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          /* align-items: center; */
+          align-items: center;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .breadcrumbs_bg {
