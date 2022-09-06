@@ -237,10 +237,10 @@ Credit: https://codepen.io/click47/pen/wEZWGe
 /* Move it (definisce l'animazione) */
 @keyframes scroll-up {
   0% {
-    transform: translateY(30%);
+    transform: translateY(80%);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-185%);
   }
 }
 /* Mette in pausa l'animazione al passaggio del mouse */
