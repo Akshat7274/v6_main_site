@@ -311,76 +311,87 @@
                 <p>Join our team for siNUsoid v6</p>
             </div>
             <div class="contact_form_inner">
-                <form id="contact-form" action="assets/mail.php">
+                <form name="contact-form" method="post">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form_input">
-                                <input name="con_name" placeholder="Name *" type="text" required>
+                                <input name="name" placeholder="Name *" type="text" required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form_input">
-                                <input name="con_email"  placeholder="E-Mail *" type="text" required>
+                                <input name="email"  placeholder="E-Mail *" type="text" required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form_input">
-                                <input name="con_phone"  placeholder="Phone *" type="text" required>
+                                <input name="phone"  placeholder="Phone *" type="text" required>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form_input">
-                                <input name="con_enrollment"  placeholder="Enrollment *" type="text" required>
+                                <input name="enrollment"  placeholder="Enrollment *" type="text" required>
                             </div>
                         </div>
                     </div>
                     <div class="team row" style="margin-bottom: 10vh;">
                         <h4 style="font-size: 1.5vw;">Which team you want to join?</h4>
                         <div class="col-lg-4">
-                            <input type="checkbox" id="team1" name="tech" value="tech">
+                            <input type="checkbox" id="team1" name="tech" value="*">
                             <label for="tech"> Tech Team</label><br>
                         </div>
                         <div class="col-lg-4">
-                            <input type="checkbox" id="team2" name="ec" value="ec">
+                            <input type="checkbox" id="team2" name="ec" value="*">
                             <label for="ec"> Event Curation Team</label><br>
                         </div>
                         <div class="col-lg-4">
-                            <input type="checkbox" id="team3" name="pr" value="pr">
+                            <input type="checkbox" id="team3" name="pr" value="*">
                             <label for="pr"> Public Relations Team</label><br>
                         </div>
                         <div class="col-lg-4">
-                            <input type="checkbox" id="team4" name="sponsorship" value="sponsorship">
+                            <input type="checkbox" id="team4" name="sponsorship" value="*">
                             <label for="sponsorship"> Sponsorship Team</label><br>
                         </div>
                         <div class="col-lg-4">
-                            <input type="checkbox" id="team5" name="digital" value="digital">
+                            <input type="checkbox" id="team5" name="digital" value="*">
                             <label for="digital"> Digital Team </label><br>
                         </div>
                         <div class="col-lg-4">
-                            <input type="checkbox" id="team6" name="creative" value="creative">
+                            <input type="checkbox" id="team6" name="creative" value="*">
                             <label for="creative"> Creative Team</label><br>
                         </div>
                         <div class="col-lg-4">
-                            <input type="checkbox" id="team7" name="content" value="content">
+                            <input type="checkbox" id="team7" name="content" value="*">
                             <label for="content"> Content Team</label><br>
                         </div>
                         <div class="col-lg-4">
-                            <input type="checkbox" id="team8" name="operation" value="operation">
+                            <input type="checkbox" id="team8" name="operation" value="*">
                             <label for="operation"> Operations Team</label><br>
                         </div>
                         <div class="col-lg-4">
-                            <input type="checkbox" id="team9" name="marketing" value="marketing">
+                            <input type="checkbox" id="team9" name="marketing" value="*">
                             <label for="marketing"> Marketing Team</label><br>
                         </div>
                     </div>
                     <div class="form_textarea">
-                        <textarea name="con_message" placeholder="Why did you choose the team(s)? *" required></textarea>
+                        <textarea name="message" placeholder="Why did you choose the team(s)? *" required></textarea>
                     </div>
                     <div class="form_input_btn text-center">
                         <button type="submit" style="bottom: 30px;" class="btn btn-link">SUBMIT NOW <img src="assets/img/icon/arrrow-icon.webp" alt=""></button>
                     </div>
                     <p class="form-message"></p>
                 </form>
+                <script>
+                    const scriptURL = 'https://script.google.com/a/macros/st.niituniversity.in/s/AKfycbyLN_BbpXAhByfCBvvmRxqLwTBUMKPph0BaZiGjFkjksiOpBfX7QNMxc580WbVqe5P3iA/exec'
+                    const form = document.forms['contact-form']
+                  
+                    form.addEventListener('submit', e => {
+                      e.preventDefault()
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => window.location.href = "index.html")
+                        .catch(error => console.error('Error!', error.message))
+                    })
+                  </script>
             </div>
         <!-- </div> -->
     </div>
@@ -402,17 +413,10 @@
                                 </div>
                                 <div class="footer_social">
                                     <ul class="d-flex">
-<<<<<<< HEAD
-                                        <li><a class="facebook" href="https://www.facebook.com"><i class="icofont-linkedin"></i></a></li>
-                                        <li><a class="dribbble" href="https://dribbble.com"><i class="icofont-dribbble"></i></a></li>
-                                        <li><a class="youtube" href="https://www.youtube.com"><i class="icofont-youtube-play"></i></a></li>
-                                        <li><a class="twitter" href="https://twitter.com"><i class="icofont-twitter"></i></a></li>
-=======
                                         <li><a class="facebook" href="https://www.facebook.com"><i class="icofont-facebook"></i></a></li>
                                         <li><a class="instagram" href="https://www.instagram.com/sinusoid.nu/"><i class="icofont-instagram"></i></a></li>
                                         <li><a class="youtube" href="https://www.youtube.com/channel/UClvgd_NxRk_S7DIa_IxGF0g?app=desktop"><i class="icofont-youtube-play"></i></a></li>
                                         <li><a class="linkedin" href="https://www.linkedin.com/company/sinusoid/"><i class="icofont-linkedin"></i></a></li>
->>>>>>> 82d105d196c7378ffc996cc32a5c92501c96a52f
                                     </ul>
                                 </div>
                             </div>
