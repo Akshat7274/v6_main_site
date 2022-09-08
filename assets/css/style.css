@@ -42,11 +42,6 @@ body {
 }
 
 @font-face {
-  font-family: Origin-Tech;
-  src: url(/assets/fonts/OriginTech.ttf);
-}
-
-@font-face {
   font-family: Thunderstrike;
   src: url(/assets/fonts/thunderstrike.ttf);
 }

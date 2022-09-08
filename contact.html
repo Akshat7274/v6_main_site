@@ -409,7 +409,7 @@
                 </div>
             </div>
         </section>
-            <!-- <div class="contact_form_area" style="padding-right: 50px;padding-left: 50px;margin-bottom: 3vh;">
+            <div class="contact_form_area" style="padding-right: 50px;padding-left: 50px;margin-bottom: 3vh;">
                 <div class="section_title text-center mb-60">
                     <h2>GET IN TOUCH</h2>
                     <p>Let us know if you have any questions</p>
@@ -439,15 +439,26 @@
                             </div>
                         </div>
                         <div class="form_textarea">
-                            <textarea name="con_message" placeholder="Your Query *"></textarea>
+                            <textarea name="con_message" placeholder="Your Query *" required></textarea>
                         </div>
                         <div class="form_input_btn text-center">
                             <button type="submit" style="bottom: 30px;" class="btn btn-link">SUBMIT NOW <img src="assets/img/icon/arrrow-icon.webp" alt=""></button>
                         </div>
                         <p class="form-message"></p>
                     </form>
+                    <script>
+                        const scriptURL = 'https://script.google.com/macros/s/AKfycbyQAfbuL6IFPcuMH2JSneGWzwItIiyT6Je0FkCXcKJGyJ8n79JEqE0TiCXKTYSUz5NaTg/exec'
+                        const form = document.forms['contact-form']
+                      
+                        form.addEventListener('submit', e => {
+                          e.preventDefault()
+                          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                            .then(response => window.location.href = "success-contact.html")
+                            .catch(error => console.error('Error!', error.message))
+                        })
+                      </script>
                 </div>
-            </div> -->
+            </div>
         <!-- player list section end -->
 
         <!-- gaming update section start -->
