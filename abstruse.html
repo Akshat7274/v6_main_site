@@ -27,40 +27,6 @@
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- <link rel="stylesheet" href="assets/css/photo_style.css"> -->
-    <script>
-        function changeForm(arg) {
-            if (arg=='a'){
-                document.getElementById('p').style.display = "block";
-                document.getElementById('q').style.display = "none";
-                document.getElementById('r').style.display = "none";
-                document.getElementById('s').style.display = "none";
-            }
-            else if (arg=='b'){
-                document.getElementById('p').style.display = "none";
-                document.getElementById('q').style.display = "block";
-                document.getElementById('r').style.display = "none";
-                document.getElementById('s').style.display = "none";
-            }
-            else if (arg=='c'){
-                document.getElementById('p').style.display = "none";
-                document.getElementById('q').style.display = "none";
-                document.getElementById('r').style.display = "block";
-                document.getElementById('s').style.display = "none";
-            }
-            else if (arg=='d'){
-                document.getElementById('p').style.display = "none";
-                document.getElementById('q').style.display = "none";
-                document.getElementById('r').style.display = "none";
-                document.getElementById('s').style.display = "block";
-            }
-            else{
-                document.getElementById('p').style.display = "none";
-                document.getElementById('q').style.display = "none";
-                document.getElementById('r').style.display = "none";
-                document.getElementById('s').style.display = "none";
-            }
-        }
-    </script>
 </head>
 
 <body class="body__bg" data-bgimg="assets/img/bg/body-bg2.webp">
@@ -204,24 +170,69 @@
 
 
     <!-- breadcrumbs area end -->
-    <div class="contact_form_area" style="padding-right: 50px;padding-left: 50px;margin-bottom: 3vh;">
-        <div class="description" style="margin-bottom: 10vh;">
-            <p>Volunteering in an annual tech fest like siNUsoid V6 is a great way to get connected with people from all around and 
-                learn about new technologies while also exploring your management skills.
-                Also, it's a terrific platform to meet new people and create some lifelong experiences. 
-                Come, join us and be a part of our volunteer program if you're looking forward to show your 
-                support or just want to have some fun and discover your untapped potential.
-                There will be a bunch of events, and we'll work extremely hard to make sure everything 
-                goes well. We hope to see you soon! 
-            </p>
-        </div>
-            <div class="section_title text-center mb-60">
-                <h2>REGISTER HERE</h2>
-                <p>Sign your team up for the Event!</p>
+
+    <div class="page_wrapper">
+
+        <!--game details section area start-->
+        <section class="game_details_section mb-125">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="game_details_inner">
+                            <div class="game_details_thumb_inner slick__activation slick_navigation" data-slick='{
+                                "slidesToShow": 1,
+                                "slidesToScroll": 1,
+                                "arrows": true,
+                                "dots": false,
+                                "autoplay": false,
+                                "speed": 300,
+                                "infinite": true ,  
+                                "responsive":[  
+                                {"breakpoint":576, "settings": { "slidesToShow": 1 } }  
+                                ]                                                     
+                            }'>
+                                <div class="game_details_thumb">
+                                    <img src="assets/img/events/abstruse.png" alt="">
+                                </div>
+                            </div>
+                            <h3><span style="color: #b154f0">Dates :</span> 28th - 30th October 2022</h3>
+                            <div class="game_details_content bottom">
+                                <div class="game_details_content_step">
+                                    <div class="game_details_desc">
+                                        <p>Abstruse is here to challenge your grey cells in this online cryptic hunt. Several rounds will pose mind boggling problems, with the fourth question even making you decipher links. Reach the end first and you can claim to be the Sherlock-est Holmes.</p>    
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="game_details_content_step">
+                                    <h2 style="color: #b154f0">Rules & Regulations</h2>
+                                    <div class="game_details_desc">
+                                        <ol>
+                                            <li>One can proceed to the next question only after solving the current question. Based on the directions of the curator, the event will take place.</li>
+                                            <li>Answers shouldn’t be shared with other participants. If this practice is found to occur, the involved participants shall be disqualified.</li>
+                                            <li>This event shall have only Individual gameplay.</li>
+                                            <li>Hints will be given by the curators when required.</li>
+                                            <li>The contestant who solves the maximum number of questions is declared the winner.</li>
+                                            <li>In case of more than one contestant solving the same number of questions, the contestant who solves the questions in minimum time will have the advantage in the judging process.</li>
+                                        </ol>     
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="contact_form_inner" id="p"> 
-                <h3 style="text-align: center;">Register for FIFA</h3>
-                <br>
+        </section>
+        <!--game details section area end-->
+    </div>
+
+    <div class="contact_form_area" style="padding-right: 50px;padding-left: 50px;margin-bottom: 3vh;">
+            <div class="section_title text-center mb-60">
+                <h2 style="color: #b154f0">REGISTER HERE</h2>
+                <p>Sign yourself up for the Event!</p>
+            </div>
+            <div class="contact_form_inner"> 
                 <form name="fifa-form" method="post">
                     <div class="row">
                         <div class="col-lg-4">
