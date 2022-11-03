@@ -219,7 +219,7 @@
                 <h2>REGISTER HERE</h2>
                 <p>Sign your team up for the Event!</p>
             </div>
-            <div class="contact_form_inner" id="p"> 
+            <div class="contact_form_inner"> 
                 <h3 style="text-align: center;">Register for FIFA</h3>
                 <br>
                 <form name="fifa-form" method="post">
@@ -261,14 +261,13 @@
                 <script>
                     var scriptURL = 'https://script.google.com/macros/s/AKfycbyWSJw3PZuefvnRFTc2xGR1lWRd3jgaI8-XLIzyNhaDzVbhFbiPdh-nS3dO4MEZgoPdaw/exec'
                     var form = document.forms['fifa-form']
-                  
                     form.addEventListener('submit', e => {
-                      e.preventDefault()
-                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                         .then(response => window.location.href = "success-registration.html")
                         .catch(error => console.error('Error!', error.message))
                     })
-                  </script>
+                </script>
             </div>
         <!-- </div> -->
     </div>
