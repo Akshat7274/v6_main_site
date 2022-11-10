@@ -204,6 +204,10 @@
                                 <input name="phone"  placeholder="Phone *" type="text" required>
                             </div>
                         </div>
+                        <div class="tacbox">
+                            <input id="checkbox" type="checkbox" required />
+                            <label for="checkbox" style ="color: aliceblue;"> I agree to these <a href="assets/TERMS_AND_CONDITIONS.pdf" target="_blank" style = "color: #b154f0;">Terms and Conditions</a>.</label>
+                        </div>
                     </div>
                     <div class="form_textarea">
                     </div>
@@ -215,14 +219,13 @@
                 <script>
                     var scriptURL = 'https://script.google.com/macros/s/AKfycbxG_8g0gEDcBLZ6lZkDK8V8x2Gne8r5k7XJadONtDlF-KChqtwEk6x0sxMM1AljZp0D/exec'
                     var form = document.forms['biomaze-form']
-                  
                     form.addEventListener('submit', e => {
-                      e.preventDefault()
-                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                         .then(response => window.location.href = "success-registration.html")
                         .catch(error => console.error('Error!', error.message))
                     })
-                  </script>
+                </script>
             </div>
         <!-- </div> -->
     </div>
@@ -321,10 +324,10 @@
                         </div>
                             <div class="footer_bottom_link_menu">
                                 <p></p>
-                                <!-- <ul class="d-flex">
-                                    <li><a href="about.html">Terms & Condition  </a></li>
-                                    <li><a href="about.html">Privacy Policy  </a></li>
-                                </ul>-->
+                               <ul class="d-flex">
+                                    <li><a target="_blank" href="mailto: sinusoid@st.niituniversity.in">Copyright © 2022 siNUsoid v6. All Rights Reserved</a></li>
+                                    <li><a target="_blank" href="assets/TERMS_AND_CONDITIONS.pdf">Terms & Condition  </a></li>
+                                </ul>
                             </div>
                             <div class="scroll__top_icon">
                                 <a id="scroll-top" href="#"><img src="assets/img/icon/scroll-top.webp"> Back to Top</a>

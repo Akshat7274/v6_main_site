@@ -7194,3 +7194,10 @@ section.error_section {
   top: 0;
   left: 0;
 }
+
+
+input {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+}
