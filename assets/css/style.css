@@ -199,11 +199,11 @@ Credit: https://codepen.io/click47/pen/wEZWGe
 #scroll-wrapper {
   height: 70vh;
   margin: 0 auto;
-  /*border: 1px solid #FBA922; uncomment this if you having trouble*/ 
+  /*border: 1px solid #FBA922; /*uncomment this if you having trouble*/ 
 }
 .scroll-outer {
   height: calc(100% - 20px);
-  /*border: 1px solid #198844; uncomment this if you having trouble*/
+  /*border: 1px solid #198844; /*uncomment this if you having trouble*/
   padding: 0;
   overflow: hidden;
   position: relative;
@@ -214,6 +214,7 @@ Credit: https://codepen.io/click47/pen/wEZWGe
   background-color: rgba(20, 20, 20, 0.8);
   border-radius: 12px;
 }
+
 .scroll-inner {
   position: absolute;
   width: 100%;
@@ -225,6 +226,11 @@ Credit: https://codepen.io/click47/pen/wEZWGe
   /* Applica animazione all'elemento */
   animation: scroll-up 25s linear 1s infinite normal none running;
 }
+/*@media screen and (max-width: 400px) {
+  .scroller-outer{
+    top: 150px;
+  }
+} /*Problem heree!!!!!!*/
 .scroll-text{
   font-family: 'Source Code Pro', monospace;
 }
@@ -2678,7 +2684,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .gaming_details_btn .btn.btn-link img {
   width: auto;
 }
-
+@media screen and (max-width: 425px) {
+  .event-hover-text{
+    font-size: 12px;
+  }
+}
 .gaming_update_section {
   margin-bottom: 130px;
 }
