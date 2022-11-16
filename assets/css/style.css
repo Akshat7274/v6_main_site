@@ -7199,15 +7199,37 @@ section.error_section {
   width: 100%;
   height: 126px;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-
-input {
-  height: 2em;
-  width: 2em;
-  vertical-align: middle;
+.con_message::selection{
+  background: #FF0099;
+    color: black;
+    text-shadow: none;
 }
+.con_message::-moz-selection{
+    background: #FF0099;
+    color: black;
+    text-shadow: none;}
+/* Rules */
+
+/* .game_details_desc li {
+	list-style: none;
+	font-size: 20px;
+	background-color: #444;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 400px;
+	height: 50px;
+  transition: .3s box-shadow;
+}
+.game_details_desc li:hover {
+  box-shadow: 0px 0px 10px #010101;
+}
+.game_details_desc a {
+	color: #fff
+} */
