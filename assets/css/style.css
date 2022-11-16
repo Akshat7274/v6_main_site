@@ -3566,8 +3566,8 @@ section.error_section {
   }
 }
 
-.about_title h5 {
-  font-size: 22px;
+.about_title h2 {
+  font-size: 45px;
   line-height: 32px;
   font-weight: bold;
   color: #b154f0;
@@ -3575,7 +3575,7 @@ section.error_section {
   padding-left: 98px;
   margin-bottom: 25px;
 }
-.about_title h5::before {
+.about_title h2::before {
   position: absolute;
   content: "";
   width: 68px;
