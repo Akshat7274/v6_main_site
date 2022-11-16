@@ -7233,3 +7233,38 @@ section.error_section {
 .game_details_desc a {
 	color: #fff
 } */
+
+.select-input{
+  width: 100%;
+height: 62px;
+padding: 0 25px;
+line-height: 17px;
+color: #ffffff;
+background: inherit;
+border: 2px solid #281e4d;
+border-radius: 10px;
+z-index: 9;
+}
+
+.select-input text-dark{
+  color: black;
+}
+
+.btn.register-btn {
+  font-size: 23px;
+  line-height: 73px;
+  height: 73px;
+  width: 230px;
+  padding: 0 15px;
+  background: url(../img/others/btn-bg.webp);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  border: 0;
+  font-weight: 700;
+  text-decoration: none;
+}
