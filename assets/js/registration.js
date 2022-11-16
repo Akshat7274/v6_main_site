@@ -9,7 +9,7 @@ var trans_count = 0;
 var day1_count =0;
 var day2_count = 0;
 var day3_count = 0;
-var person = document.getElementById("person").value;
+var person = document.getElementById("person");
 
 
 var cost_display = document.querySelector('#cost_value')
@@ -29,7 +29,7 @@ day1.addEventListener('change', function() {
       cost_display.placeholder='Your Total Cost of Registration is: ' + String(final_cost);
       day1_count =0;
   }
-  document.getElementById("cost_value").value = final_cost * document.getElementById("person").value;
+  document.getElementById("cost_value").value = final_cost * person.value;
   });
 
   day2.addEventListener('change', function() {
@@ -48,7 +48,7 @@ day1.addEventListener('change', function() {
       day2_count = 0;
       
   }
-  document.getElementById("cost_value").value = final_cost * document.getElementById("person").value;
+  document.getElementById("cost_value").value = final_cost * person.value;
   });
 
   day3.addEventListener('change', function() {
@@ -62,8 +62,7 @@ day1.addEventListener('change', function() {
       console.log(final_cost);
       cost_display.placeholder='Your Total Cost of Registration is: ' + String(final_cost);
   }
-  document.getElementById("cost_value").value = final_cost * document.getElementById("person").value;
-
+  document.getElementById("cost_value").value = final_cost * person.value;
   });
 
   transport.addEventListener('change', function() {
@@ -78,6 +77,9 @@ day1.addEventListener('change', function() {
         console.log(final_cost);
         cost_display.placeholder='Your Total Cost of Registration is: ' + String(final_cost);
     }
-    document.getElementById("cost_value").value = final_cost * document.getElementById("person").value;
+    document.getElementById("cost_value").value = final_cost * person.value;
+  });
 
+  person.addEventListener('change', function() {
+    document.getElementById("cost_value").value = final_cost * person.value;
   });
