@@ -114,7 +114,7 @@
     <div class="page_wrapper" style="margin-top: -10%;">
         <section class="error_section">
             <div class="container">
-                <form name="codejam-form" method="post" id = "my_form">
+                <form name="registration-form" method="post" id = "my_form">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="form_input">
@@ -123,12 +123,12 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="form_input">
-                                <input name="discord"  placeholder="Government Identification Number *" type="text">
+                                <input name="govt"  placeholder="Government Identification Number *" type="text">
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="form_input">
-                                <input name="university"  placeholder="Contact Number *" type="text" required>
+                                <input name="phone"  placeholder="Contact Number *" type="text" required>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -140,8 +140,8 @@
                         <div class="col-lg-4">
                            
                             <div class="tacbox">
-                                <input id="checkbox" class="i_transport" type="checkbox" value="" />
-                                <label for="checkbox" id="i_transportation" style ="color: aliceblue;"> Include Transportation for:</label>
+                                <input id="checkbox" name="transport" class="i_transport" type="checkbox" value="1" />
+                                <label for="checkbox" id="i_transportation" style ="color: aliceblue;"> Include Transportation</label>
                             </div>
                             
                         </div>
@@ -149,11 +149,11 @@
                         <div class="col-lg-4">
                             Include Accomodation for:
                             <div class="tacbox">
-                                <input id="checkbox" name="day" class="t_day1" type="radio" value="" />
+                                <input id="checkbox" name="day" class="t_day1" type="radio" value="1" />
                                 <label for="checkbox"  style ="color: aliceblue;">1 days</label>
-                                <input id="checkbox"  name="day" class="t_day2"  type="radio" value="" />
+                                <input id="checkbox"  name="day" class="t_day2"  type="radio" value="2" />
                                 <label for="checkbox" style ="color: aliceblue;">2 days</label>
-                                <input id="checkbox"  name="day" class="t_day3"  type="radio" value="" />
+                                <input id="checkbox"  name="day" class="t_day3"  type="radio" value="3" />
                                 <label for="checkbox"  style ="color: aliceblue;"> 3 days</label>
                             </div>
                             
@@ -172,7 +172,7 @@
                         <div class="col-lg-4">
                             <div class="p-4"></div>
                             <div class="form_input">
-                                <input type="" id="cost_value" value="" placeholder="Total Payable Amount" disabled>
+                                <input type="" name="final_cost" id="cost_value" placeholder="Total Payable Amount" disabled>
                             </div>
                         </div>
 
@@ -181,6 +181,17 @@
                     </div>
                     <p class="form-message"></p>
                 </form>
+                <script>
+                    var scriptURL = 'https://script.google.com/macros/s/AKfycbx-eQiAkzqKReReP3Cg6ELRF3RSk-D6_j_Wby2dsts5trcGLzMRgWONPf-HWlzH01nJ/exec'
+                    var form = document.forms['registration-form']
+                  
+                    form.addEventListener('submit', e => {
+                      e.preventDefault()
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => window.location.href = "success-registration.html")
+                        .catch(error => console.error('Error!', error.message))
+                    })
+                  </script>
             </div>
         </section>
 
